@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+</head>
+<body>
+<header>
+<div class="container">
+	<a id="logo" href="#">
+    <img src="images/logo2.png" alt="Logo" width="80px" height="80px"/>
+	</a>
+	<nav class="site-nav">
+    <ul>
+        <li><a href="#"><div class="home"></div>HOME</a></li>
+        <li><a href="#"><div class="works"></div>ABOUT</a></li>
+        <li><a href="#"><div class="services"></div>SERVICES</a></li>
+        <li><a href="#"><div class="contact"></div>WORK</a></li>
+    </ul>
+    </nav>
+	<div class="menu-toggle">
+    <div class="hamburger"></div>
+	</div> 
+</div>
+</header>  
+    
+<div id="main">
+    <div id="object2">
+        <img src="images/lotus1.png"/>
+    <div id="layer">
+        <div id="msg">
+        DLOTUS
+            <div id="zero">
+        DESIGN
+            </div>
+        </div>
+    </div>
+</div>
+    
+     <div class="clear-fix"></div>
+    
+
+    
+    <div class="content">
+                            <h3>We are D LOTUS</h3>
+<h2>We build and design brands that stand out from the pack</h2>
+<p>We’re a full-service, design and branding agency that works with modern companies to uniquely position and differentiate brands. We are leaders in helping ambitious companies pursue fearless ideas, operationalize their culture, and breakthrough crowded categories. By choosing DLOTUS, you’ll increase revenue, reduce pressure, and create a stand out brand that helps you win.
+
+</p>                        
+    
+    </div>
+    
+
+    
+   
+</body>
+    <script src="myScript1.js"></script>
+    
+     <script src="jquery-1.10.2.min.js"></script>
+    
+        <script>
+        
+        var object2=$('#object2');
+      
+        
+        var layer=$('#layer');
+        
+       
+        
+        layer.mousemove(function(e){
+           var valueX=(e.pageX * -1 / 15); 
+           var valueY=(e.pageY * -1 / 20); 
+            
+            object2.css({
+                'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
+            });
+        });
+        
+        
+    </script>
+    
+    
+    
+
+</html>

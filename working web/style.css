@@ -1,0 +1,289 @@
+
+body {
+	margin: 0px;
+    padding: 0px;
+	font-family: sans-serif;
+	background-color: #f0f8ea
+}
+
+.container {
+	width: 98%;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #1D45B9;
+    
+	color: #ebebd3;
+	padding: 2em 0;
+	position: relative;
+}
+
+header::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+#logo{
+	position: absolute;
+	float: left;
+    top: 18px;
+	
+}
+
+.site-nav {
+	position: absolute;
+	top: 100%;
+	right: 30%;
+	background: #464655;
+	clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+}
+
+.site-nav--open{
+	clip-path: circle(150% at top right);
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.site-nav li{
+	border-bottom: 1px solid #575766;
+
+}
+
+.site-nav li:last-child {
+ border-bottom: none;
+}
+
+.site-nav a {
+	color: #fff;
+	display: block;
+	padding: 2em 6em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+	background-color: #e4b363;
+	color: #000;
+}
+
+.site-nav .home {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    
+        background-image: url('icons/Home1x.png'); 
+        background-size: 50px 50px;
+        background-repeat: no-repeat;
+    }
+
+.site-nav .home:hover {
+    background-image: url('images/home1.svg');
+    background-size: 50px 50px;
+}
+
+.site-nav .works {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    
+        background-image: url('icons/About1.png'); 
+        background-size: 50px 50px;
+        background-repeat: no-repeat;
+    }
+
+.site-nav .works:hover {
+    background-image: url('images/code1.svg');
+    background-size: 50px 50px;
+}
+
+.site-nav .services {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    
+        background-image: url('icons/Services1.png'); 
+        background-size: 50px 50px;
+        background-repeat: no-repeat;
+    }
+
+.site-nav .services:hover {
+    background-image: url('images/study1.svg');
+    background-size: 50px 50px;
+}
+
+.site-nav .contact {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    
+        background-image: url('icons/Work1.png'); 
+        background-size: 50px 50px;
+        background-repeat: no-repeat;
+    }
+
+.site-nav .contact:hover {
+    background-image: url('images/cart1.svg');
+    background-size: 50px 50px;
+}
+
+.menu-toggle {
+	
+	padding: 1em;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+	content: '';
+	display: block;
+	background: #ebeb03;
+	height: 3px;
+	width: 1.5em;
+	border-radius: 3px;
+	transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+	transform: translateY(-6px);
+}
+
+.hamburger::after {
+	transform: translateY(3px);
+}
+
+.open .hamburger {
+	transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+	opacity: 0;
+}
+
+.open .hamburger::after {
+	transform: translateY(-3px) rotate(-90deg);
+}
+
+@media (min-width: 700px) {
+    .menu-toggle {
+        display: none;
+    }
+    .site-nav {
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        clip-path: initial;
+    }
+    
+    .site-nav li {
+        display: inline-block;
+        border: none;
+    }
+    
+    .site-nav a {
+        padding: 0;
+        margin-left: 3em;
+    }
+    
+    .site-nav a:hover,
+    .site-nav a:focus {
+        background: transparent;
+    }
+    
+}
+/*end of navbar*/
+
+/* mouse moment */
+
+#main{
+
+    /*background: #1D45B9; */
+
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#object2{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#layer{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+#msg{
+    font-family: arial;
+    font-size: 70px;
+    color:#ADFCCB;
+    position: absolute;
+    top:50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    line-height: 60px;
+    border-left: 2px solid #ADFCCBff;
+    padding-left: 10px;
+    padding-top:5px;
+}
+#zero{
+    font-size: 40px;
+    letter-spacing: 25px;
+}
+
+/* mouse moment end*/
+
+
+.content {
+    color: #000;
+    margin-top: 100px;
+    text-align: center;
+    width: 90%;
+    height: 400vh;
+    min-height: 600px;
+    max-height: 1080px;
+    padding: 20px 50px;
+}
+
+
+
+ .clear-fix {
+	 clear: both;
+	 padding: 2%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
